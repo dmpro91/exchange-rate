@@ -14,7 +14,7 @@ namespace ExchangeRate {
   }
 }
 
-export default class ExchangeRate implements ExchangeRate.IExchangeRate {
+class ExchangeRate implements ExchangeRate.IExchangeRate {
   public selectedCerrency: AVAILABLE_CURRENCYCURRENCY_NAME[] = ['USD', 'EUR'];
 
   public async showAll(selectedCerrency?: ExchangeRate['selectedCerrency']): Promise<ExchangeRate.RateAll> {
@@ -36,3 +36,5 @@ export default class ExchangeRate implements ExchangeRate.IExchangeRate {
     }
   }
 }
+
+export { ExchangeRate };
